@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ProjectMobile</string>
+    <string name="Profil">Profil</string>
+    <string name="Username">Username</string>
+    <string name="editUsername">Username</string>
+    <string name="NIK">NIK KTP</string>
+    <string name="editNIK">1271123456789098</string>
+    <string name="birthDate">Birth Date</string>
+    <string name="editBirthDate">20/10/2000</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="editPhoneNumber">081983202441</string>
 </resources>

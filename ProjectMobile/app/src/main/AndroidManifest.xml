@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProjectMobile"
         tools:targetApi="31">
         <activity
+            android:name=".profill"
+            android:exported="false" />
+        <activity
+            android:name=".bottomNavigation"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,4 +28,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
