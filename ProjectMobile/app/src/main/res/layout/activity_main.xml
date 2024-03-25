@@ -33,24 +33,31 @@
                 android:orientation="horizontal"
                 android:layout_marginBottom="10dp">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Class Available Today">
                 </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Semua"
+                    android:gravity="end">
+                </TextView>
             </LinearLayout>
-            <LinearLayout
+            <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:orientation="vertical"
                 android:background="@color/green"
                 android:layout_marginBottom="10dp">
-            </LinearLayout>
-            <LinearLayout
+            </ImageButton>
+            <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:orientation="vertical"
-                android:background="@color/green">
-            </LinearLayout>
+                android:background="@color/green"
+                android:layout_marginBottom="10dp">
+            </ImageButton>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,7 +67,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
                 <LinearLayout
                     android:layout_width="195dp"
                     android:layout_height="match_parent"
@@ -69,7 +77,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Class Available Today">
+                        android:text="Trainer Available Today">
                     </TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -92,25 +100,25 @@
                     android:layout_width="195dp"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:gravity="start">
-                    <LinearLayout
+                    android:gravity="center">
+                    <ImageButton
                         android:layout_width="190dp"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:background="@color/green">
-                    </LinearLayout>
+                    </ImageButton>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="195dp"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:gravity="end">
-                    <LinearLayout
+                    android:gravity="center">
+                    <ImageButton
                         android:layout_width="190dp"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:background="@color/green">
-                    </LinearLayout>
+                    </ImageButton>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

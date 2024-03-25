@@ -1,37 +1,60 @@
 package com.example.projectmobile.Model;
 
+import com.example.projectmobile.R;
+
 import java.util.Date;
 
+import io.realm.Realm;
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+import io.realm.annotations.RealmClass;
+import io.realm.annotations.Required;
 
+@RealmClass
 public class Model extends  RealmObject{
-
+    @PrimaryKey
     private int userID;
+    @Required
     private String username;
+    @Required
     private String gender;
+    @Required
     private String NIK;
+    @Required
     private Date birthdate;
+    @Required
     private int phoneNumber;
+    @Required
     private String email;
+    @Required
     private String homeAddress;
+    @Required
     private String country;
+    @Required
     private String password;
+    @Required
     private String privateClass;
+    @Required
     private String trainerName;
-
+    @Required
     private Date bookDate;
+    @Required
     private int quickRespon;
+    @Required
     private String session;
+    @Required
     private String payment;
+    @Required
     private int card;
+    @Required
     private int total;
 
-    public login(String username,String password){
+    public Login(String username,String password){
         this.username = username;
         this.password = password;
     }
 
-    public model(int userID, String username, String gender, String NIK, Date birthdate, int phoneNumber, String email, String homeAddress, String country, String password) {
+    public Register(int userID, String username, String gender, String NIK, Date birthdate, int phoneNumber, String email, String homeAddress, String country, String password) {
         this.userID = userID;
         this.username = username;
         this.gender = gender;
@@ -291,5 +314,20 @@ public class Model extends  RealmObject{
 
     private int deleteHistoryID(){
         return historyID;
+    }
+
+    public void inputData(){
+        Realm realm = Realm.getDefaultInstance();
+        realm.executeTransaction(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+                Register register = realm.createObject(Register.class);
+                register.setIdUser("1");
+                register.setNamaUser("Produk Baru");
+                register.setAlamatUser(R.drawable.ic_launcher_background);
+                register.setKodePos(10800);
+                register.setCountry();
+            }
+        });
     }
 }
